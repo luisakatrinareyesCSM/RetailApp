@@ -1,0 +1,23 @@
+﻿<Window x:Class="lkPangilinan.RetailApp.Windows.Customers.updateCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lkPangilinan.RetailApp.Windows.Customers"
+        mc:Ignorable="d"
+        Title="updateCustomer" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="35" Margin="229,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="35" Margin="229,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272"/>
+        <TextBox x:Name="txtPNumber" HorizontalAlignment="Left" Height="35" Margin="229,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272"/>
+        <TextBox x:Name="txtBillAddresss" HorizontalAlignment="Left" Height="35" Margin="229,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272"/>
+        <TextBox x:Name="txtShipAddress" HorizontalAlignment="Left" Height="35" Margin="229,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="121,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.076,-1.339"/>
+        <Label Content="Email Address" HorizontalAlignment="Left" Margin="121,91,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.529,0.141"/>
+        <Label Content="Phone Number" HorizontalAlignment="Left" Margin="121,152,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.529,0.141"/>
+        <Label Content="Billing Address" HorizontalAlignment="Left" Margin="121,208,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.529,0.141"/>
+        <Label Content="Shipping Address" HorizontalAlignment="Left" Margin="121,259,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.529,0.141"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Height="42" Margin="121,327,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" />
+        <Button Content="Update" HorizontalAlignment="Left" Height="42" Margin="335,327,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click_1" />
+    </Grid>
+</Window>
