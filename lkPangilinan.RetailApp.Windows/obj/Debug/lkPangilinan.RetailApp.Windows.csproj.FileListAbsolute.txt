@@ -36,3 +36,5 @@ C:\Users\admin\source\repos\lkPangilinan.RetailApp.Windows\obj\Debug\Customers\a
 C:\Users\admin\source\repos\lkPangilinan.RetailApp.Windows\obj\Debug\Customers\addCustomer.baml
 C:\Users\admin\source\repos\lkPangilinan.RetailApp.Windows\obj\Debug\Customers\updateCustomer.g.cs
 C:\Users\admin\source\repos\lkPangilinan.RetailApp.Windows\obj\Debug\Customers\updateCustomer.baml
+C:\Users\admin\source\repos\lkPangilinan.RetailApp.Windows\obj\Debug\LoginWindow.g.cs
+C:\Users\admin\source\repos\lkPangilinan.RetailApp.Windows\obj\Debug\LoginWindow.baml

@@ -14,9 +14,11 @@ namespace lkPangilinan.RetailApp.Windows.Models
 
         public string LastName { get; set; }
 
-        public decimal ContactNumber { get; set; }
+        public string ContactNumber { get; set; }
 
         public string EmailAddress { get; set; }
+
+        public string Password { get; set; }
 
     }
 }

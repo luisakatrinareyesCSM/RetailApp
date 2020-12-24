@@ -80,5 +80,65 @@ namespace lkPangilinan.RetailApp.Windows.BLL
                 };
             }
         }
+
+        public static Operation Login(string emailAddress = "", string password = "")
+        {
+            if (string.IsNullOrEmpty(emailAddress))
+            {
+                return new Operation()
+                {
+                    Code = "500",
+                    Message = "Invalid Login"
+                };
+            }
+
+            if (string.IsNullOrEmpty(password))
+            {
+                return new Operation()
+                {
+                    Code = "500",
+                    Message = "Invalid Login"
+                };
+            }
+
+            try
+            {
+                RetailUser user = db.RetailUsers.FirstOrDefault(e => e.EmailAddress.ToLower() == emailAddress.ToLower());
+
+                if (user == null)
+                {
+                    return new Operation()
+                    {
+                        Code = "500",
+                        Message = "Invalid Login"
+                    };
+                }
+
+                if (password == user.Password)
+                {
+                    return new Operation()
+                    {
+                        Code = "200",
+                        Message = "Successful Login",
+                        ReferenceId = user.Id
+                    };
+                }
+
+                return new Operation()
+                {
+                    Code = "500",
+                    Message = "Invalid Login"
+                };
+            }
+            catch (Exception e)
+            {
+                return new Operation()
+                {
+                    Code = "500",
+                    Message = e.Message
+                };
+            }
+        }
+
     }
 }

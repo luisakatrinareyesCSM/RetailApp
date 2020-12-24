@@ -35,6 +35,42 @@ namespace lkPangilinan.RetailApp.Windows.Customers
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+
+            List<string> errors = new List<string>();
+            if (string.IsNullOrEmpty(txtName.Text))
+            {
+                errors.Add("First Name is required.");
+            };
+
+            if (string.IsNullOrEmpty(txtBillAddresss.Text))
+            {
+                errors.Add("Billing Address is required.");
+            };
+
+            if (string.IsNullOrEmpty(txtPNumber.Text))
+            {
+                errors.Add("Password is required.");
+            };
+
+            if (string.IsNullOrEmpty(txtEmail.Text))
+            {
+                errors.Add("Email is required.");
+            };
+
+            if (string.IsNullOrEmpty(txtShipAddress.Text))
+            {
+                errors.Add("Shipping Address is required.");
+            };
+
+            var message = string.Join(Environment.NewLine, errors);
+
+            if (errors.Count > 0)
+
+            {
+                MessageBox.Show(message);
+            }
+
+
             var op = CustomerBLL.Add(new Customer()
             {
                 Id = Guid.NewGuid(),

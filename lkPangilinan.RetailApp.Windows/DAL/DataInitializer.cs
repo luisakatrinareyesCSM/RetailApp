@@ -60,6 +60,16 @@ namespace lkPangilinan.RetailApp.Windows.DAL
                 Default_ShippingAddress = "#123 Purok 2 San Simon Dinalupihan Bataan"
             });
 
+            context.RetailUsers.Add(new Models.RetailUser()
+            { 
+            Id = Guid.NewGuid(),
+            EmailAddress = "nenitacorong@gmail.com",
+            ContactNumber = "09095487896",
+            FirstName = "Nenita",
+            LastName = "Corong",
+            Password = "123" 
+            });
+
             context.SaveChanges();
         }
     }

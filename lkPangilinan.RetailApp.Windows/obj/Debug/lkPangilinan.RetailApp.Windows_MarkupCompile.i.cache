@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\admin\source\repos\lkPangilinan.RetailApp.Windows\App.xaml
-8-1290199432
+9-403964488
 
-28-893681853
+291135111452
 26-1009496059
-Customers\addCustomer.xaml;Customers\CstmerList.xaml;Customers\updateCustomer.xaml;MainWindow.xaml;OrderProducts\OrderProductsList.xaml;Orders\OrderList.xaml;Products\ProductList.xaml;RetailUsers\UserList.xaml;
+Customers\addCustomer.xaml;Customers\CstmerList.xaml;Customers\updateCustomer.xaml;LoginWindow.xaml;MainWindow.xaml;OrderProducts\OrderProductsList.xaml;Orders\OrderList.xaml;Products\ProductList.xaml;RetailUsers\UserList.xaml;
 
 True
 
